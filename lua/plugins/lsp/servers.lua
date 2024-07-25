@@ -1,4 +1,5 @@
 local M = { -- clangd = {},
+  pyright = require 'plugins.lsp.servers.pyright',
   gopls = {
     on_attach = function()
       -- Automatically organize imports on save
