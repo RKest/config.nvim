@@ -27,9 +27,13 @@ require('lazy').setup({
 
   require 'plugins.mini', -- Couple 'mini' plugins
   require 'plugins.nvim-treesitter', -- TreeSitter
+  require 'plugins.tresitter-cpp-tools', -- TreeSitter C++ tools
 
   require 'plugins.autopairs', -- Auto pairs
   require 'plugins.neo-tree', -- Neo tree
+
+  require 'plugins.nvim-ufo', -- Code folding
+  require 'plugins.debug', -- Debugger
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

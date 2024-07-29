@@ -1,5 +1,12 @@
 local M = { -- clangd = {},
   pyright = require 'plugins.lsp.servers.pyright',
+  clangd = {
+    on_attach = function()
+      vim.keymap.set('n', '<C-S>', function()
+        vim.cmd 'ClangdSwitchSourceHeader'
+      end, { desc = 'Switch header/[S]ource file' })
+    end,
+  },
   gopls = {
     on_attach = function()
       -- Automatically organize imports on save
