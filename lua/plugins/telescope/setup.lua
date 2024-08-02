@@ -1,6 +1,6 @@
 local M = { -- :help telescope.setup()
   defaults = {
-    file_ignore_patterns = { 'node_modules', 'venv' },
+    file_ignore_patterns = { 'node_modules', 'venv', 'build' },
     mappings = {
       i = {
         ['<C-Down>'] = require('telescope.actions').cycle_history_next,

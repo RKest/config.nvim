@@ -34,6 +34,8 @@ require('lazy').setup({
 
   require 'plugins.nvim-ufo', -- Code folding
   require 'plugins.debug', -- Debugger
+
+  require 'plugins.cmake', -- CMake
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
